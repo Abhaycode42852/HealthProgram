@@ -8,10 +8,7 @@ def playSong(event,msg):
     song_file=event+'.mp3'
     mixer.init()
     mixer.music.load(song_file)
-    initial=time.time()
-    while time.time()-initial>=60:
-        initial=time.time()
-        mixer.music.play()
+    mixer.music.play()
 
 def Done(event):
     act_dict={'water':'drank','eye':'idone','exercise':'xdone'}
