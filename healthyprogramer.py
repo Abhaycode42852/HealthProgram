@@ -59,7 +59,7 @@ if __name__=='__main__':
         water_time = 30*60
         eye_time = 40*60
         exe_time = 45*60
-        time.sleep(1)
+        time.sleep(300)
         if int(time.time())-water_start>=water_time:
             msg="It's time to Drink the water"
             event="water"
